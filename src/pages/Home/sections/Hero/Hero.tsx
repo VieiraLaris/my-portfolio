@@ -4,6 +4,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import theme from "../../../../theme";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
+// import StyledCircularButton from "../../../../components/StyledCircularButton/StyledCircularButton";
 
 const Hero = () => {
     const StyledHero = styled("div")(({theme})=> ({
