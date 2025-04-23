@@ -25,6 +25,22 @@ const Hero = () => {
         border: `5px solid ${theme.palette.secondary.light}`
     }))
 
+    const handleDownload = () => {
+        console.log("Download CV button clicked");
+      
+        const link = document.createElement('a');
+        link.href = "../../../src/assets/documents/CV-LarissaVieira.pdf";        
+        link.download = 'Larissa_Vieira_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
+    
+    const handleEmail = () => {
+        console.log("Contact button clicked");
+        window.location.href = 'mailto:larissadjvieira@gmail.com?subject=Olá Larissa&body=Gostaria de falar com você.';
+    };
+
     return (
       <>
         <StyledHero>
@@ -45,13 +61,13 @@ const Hero = () => {
                         <Typography color="secondary.light" variant="h3" textAlign="center">Software Engineer</Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={5}>
                             <Grid size={{ xs: 12, md: 4 }} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("download")}>
+                                <StyledButton onClick={handleDownload}>
                                     <DownloadOutlinedIcon/>
                                     <Typography>Download CV</Typography>
                                 </StyledButton>
                             </Grid>
                             <Grid size={{ xs: 12, md: 4 }} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("contact")}>
+                                <StyledButton onClick={handleEmail}>
                                     <EmailOutlinedIcon/>
                                     <Typography>Contact me</Typography>
                                 </StyledButton>
