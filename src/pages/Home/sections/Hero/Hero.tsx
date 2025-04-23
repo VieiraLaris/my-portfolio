@@ -13,10 +13,12 @@ const Hero = () => {
         display: "flex",
         alignItems: "center",
         [theme.breakpoints.up('xs')]: {
-            paddingTop: "80px"
+            paddingTop: "80px",
+            paddingBottom: "40px"
         },
         [theme.breakpoints.up('md')]: {
-            paddingTop: "0"
+            paddingTop: "0",
+            paddingBottom: "0"
         },
     }))
 
