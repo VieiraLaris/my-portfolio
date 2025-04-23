@@ -45,13 +45,13 @@ const Hero = () => {
                         <Typography color="secondary.light" variant="h3" textAlign="center">Software Engineer</Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={5}>
                             <Grid size={{ xs: 12, md: 4 }} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onClick={() => console.log("download")}>
                                     <DownloadOutlinedIcon/>
                                     <Typography>Download CV</Typography>
                                 </StyledButton>
                             </Grid>
                             <Grid size={{ xs: 12, md: 4 }} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onClick={() => console.log("contact")}>
                                     <EmailOutlinedIcon/>
                                     <Typography>Contact me</Typography>
                                 </StyledButton>
