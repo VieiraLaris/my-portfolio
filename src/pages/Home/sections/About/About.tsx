@@ -6,7 +6,7 @@ import theme from "../../../../theme";
 
 const About = () => {
     const StyledAbout = styled("div")(({theme})=> ({
-        backgroundColor: theme.palette.secondary.light,
+        backgroundColor: theme.palette.secondary.main,
         display: "flex",
         alignItems: "top",
         [theme.breakpoints.up('xs')]: {
