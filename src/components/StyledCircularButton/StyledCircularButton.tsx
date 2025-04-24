@@ -11,7 +11,7 @@ const StyledCircularButton: React.FC<StyledCircularButtonProps> = ({children, on
         backgroundColor: "transparent",
         border: `1px solid ${theme.palette.secondary.light}`,
         borderRadius: "100%",
-        padding: "10px",
+        padding: "20px",
         color: theme.palette.secondary.light,
         display: "inline-flex",
         alignItems: "center",
