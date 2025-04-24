@@ -7,7 +7,7 @@ interface StyledInfoBoxProps {
 
 const StyledInfoBox: React.FC<StyledInfoBoxProps> = ({children}) => {
     const StyledInfoBox = styled("button")(({ theme }) => ({
-        backgroundColor: "#F4C3BE",
+        backgroundColor: theme.palette.secondary.light,//"#F4C3BE",
         border: `1px solid ${theme.palette.primary.main}`,
         borderRadius: "3px",
         padding: "5px 15px",        
