@@ -3,18 +3,18 @@ import StyledInfoBox from "../../../../components/InfoBox/InfoBox";
 
 const Skills = () => {
     const StyledSkills = styled("div")(({theme})=> ({
-        backgroundColor: theme.palette.secondary.light,
+        backgroundColor: theme.palette.secondary.main,
         display: "flex",
         alignItems: "top",
         [theme.breakpoints.up('xs')]: {
             paddingTop: "30px",
             height: "100%",
-            paddingBottom: "40px"
+            paddingBottom: "50px"
         },
         [theme.breakpoints.up('md')]: {
             paddingTop: "5",
             height: "100%",
-            paddingBottom: "50px"
+            paddingBottom: "70px"
         },
     }))
 
@@ -34,6 +34,11 @@ const Skills = () => {
                         </Grid>
                         <Grid display="flex" justifyContent="center">
                             <StyledInfoBox>
+                                <Typography fontWeight="bold" variant="h6">MySQL</Typography>
+                            </StyledInfoBox>
+                        </Grid>
+                        <Grid display="flex" justifyContent="center">
+                            <StyledInfoBox>
                                 <Typography fontWeight="bold" variant="h6">C</Typography>
                             </StyledInfoBox>
                         </Grid>
@@ -45,6 +50,21 @@ const Skills = () => {
                         <Grid display="flex" justifyContent="center">
                             <StyledInfoBox>
                                 <Typography fontWeight="bold" variant="h6">React</Typography>
+                            </StyledInfoBox>
+                        </Grid>
+                        <Grid display="flex" justifyContent="center">
+                            <StyledInfoBox>
+                                <Typography fontWeight="bold" variant="h6">TypeScript</Typography>
+                            </StyledInfoBox>
+                        </Grid>                        
+                        <Grid display="flex" justifyContent="center">
+                            <StyledInfoBox>
+                                <Typography fontWeight="bold" variant="h6">Data Modeling</Typography>
+                            </StyledInfoBox>
+                        </Grid>
+                        <Grid display="flex" justifyContent="center">
+                            <StyledInfoBox>
+                                <Typography fontWeight="bold" variant="h6">Linux</Typography>
                             </StyledInfoBox>
                         </Grid>
                     </Grid>
