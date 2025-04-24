@@ -11,7 +11,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) => {
         backgroundColor: "transparent",
         border: `1px solid ${theme.palette.secondary.light}`,
         borderRadius: "3px",
-        padding: "5px 15px",
+        padding: "10px 20px",
         width: "100%",
         color: theme.palette.secondary.light,
         display: "inline-flex",
