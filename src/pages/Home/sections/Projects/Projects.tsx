@@ -2,6 +2,8 @@ import { Container, Grid, styled, Typography, Zoom, Box } from "@mui/material";
 import { useState } from "react";
 import StyledProjectBox from "../../../../components/ProjectBox/ProjectBox";
 import StyledButtonReversed from "../../../../components/StyledButton/StyledButtonReversed";
+import deOlhoRSLogo from "../../../../../src/assets/images/logoDeOlhoRS.png";
+import entregaiLogo from "../../../../../src/assets/images/LogoEntregai.png";
 
 const Projects = () => {
   const StyledProjects = styled("div")(({ theme }) => ({
@@ -60,13 +62,13 @@ const Projects = () => {
           </Grid>
 
           {[{
-            img: "../../../../../src/assets/images/logoDeOlhoRS.png",
+            img: deOlhoRSLogo,
             title: "De Olho RS",
             description: "Collecting official municipal diaries from different cities in Rio Grande do Sul and analyzing information related to appointments and dismissals of public servants.",
             handleButton: handleDeOlhoRS
           },
           {
-            img: "../../../../../src/assets/images/LogoEntregai.png",
+            img: entregaiLogo,
             title: "EntregAí",
             description: "Project developed to demonstrate the practical application of the Interval Scheduling algorithm, which organizes deliveries prioritizing those with closer end times.",
             handleButton: handleEntregai
