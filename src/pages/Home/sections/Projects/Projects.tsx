@@ -37,7 +37,7 @@ const Projects = () => {
     paddingBottom: theme.spacing(2),
   }));
 
-  const [checked, setChecked] = useState(true);
+  const [checked] = useState(true);
 
   const handleDeOlhoRS = () => {
     console.log("View project De Olho RS button clicked");
