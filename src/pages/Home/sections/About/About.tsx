@@ -1,7 +1,7 @@
 import { Box, Container, Grid, styled, Typography } from "@mui/material"
 import StyledInfoBox from "../../../../components/InfoBox/InfoBox";
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
-import WorkspacePremiumOutlinedIcon from '@mui/icons-material/WorkspacePremiumOutlined';
+// import WorkspacePremiumOutlinedIcon from '@mui/icons-material/WorkspacePremiumOutlined';
 import theme from "../../../../theme";
 
 const About = () => {
@@ -35,6 +35,7 @@ const About = () => {
                         <Typography color="primary.main" variant="h1" textAlign="center" pb={5}>About me</Typography>
                     </Grid>
                     <Grid container size={12} display="flex" justifyContent="center" spacing={3} >
+                        {/*
                         <Grid display="flex" justifyContent="center">
                             <StyledInfoBox>
                                 <WorkspacePremiumOutlinedIcon/>
@@ -43,6 +44,7 @@ const About = () => {
                                 <Typography variant="h6">?????????</Typography>
                             </StyledInfoBox>
                         </Grid>
+                        */}
                         <Grid display="flex" justifyContent="center">
                             <StyledInfoBox>
                                 <SchoolOutlinedIcon/>
@@ -53,7 +55,9 @@ const About = () => {
                         </Grid>
                     </Grid>
                     <Grid size={12} pt={5}>
-                        <Typography color="primary.main" variant="h6" textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</Typography>
+                        <Typography variant="h6" textAlign="center">✴ Hi, I'm Larissa! ✴</Typography>
+                        <Typography color="primary.main" variant="h6" textAlign="center">I'm a Software Engineering student at the University of Brasília (UnB), with a strong interest in data modeling and analysis. I also really enjoy working with front-end development, where I can combine creativity and technical skills to build engaging user experiences.</Typography>
+                        <Typography color="primary.main" variant="h6" textAlign="center">I’m eager to take on new challenges that allow me to enhance my software development skills and contribute to impactful projects.</Typography>
                     </Grid>
                 </Grid>
                 </Box>
