@@ -6,6 +6,9 @@ import theme from "../../../../theme";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
 import StyledCircularButton from "../../../../components/StyledCircularButton/StyledCircularButton";
 // import StyledCircularButton from "../../../../components/StyledCircularButton/StyledCircularButton";
+import githubIcon from '../../../../assets/images/githubRosa.png';
+import linkedinIcon from '../../../../assets/images/linkedinRosa.png';
+import curriculo from '../../../../assets/documents/LarissaDeJesusVieira-CV.pdf';
 
 const Hero = () => {
     const StyledHero = styled("div")(({theme})=> ({
@@ -40,7 +43,7 @@ const Hero = () => {
         console.log("Download CV button clicked");
       
         const link = document.createElement('a');
-        link.href = "../../../src/assets/documents/CV-LarissaVieira.pdf";        
+        link.href = curriculo;        
         link.download = 'Larissa_Vieira_CV.pdf';
         document.body.appendChild(link);
         link.click();
@@ -97,12 +100,12 @@ const Hero = () => {
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={5}>
                             <Grid size={{ xs: 4, md: 2 }} display="flex" justifyContent="center">
                                 <StyledCircularButton onClick={handleGithub}>
-                                    <StyledIcon src="../../../../../src/assets/images/githubRosa.png" />
+                                    <StyledIcon src={githubIcon} />
                                 </StyledCircularButton>
                             </Grid>
                             <Grid size={{ xs: 4, md: 2 }} display="flex" justifyContent="center">
                                 <StyledCircularButton onClick={handleLinkedin}>
-                                    <StyledIcon src="../../../../../src/assets/images/linkedinRosa.png" />
+                                    <StyledIcon src={linkedinIcon} />
                                 </StyledCircularButton>
                             </Grid>
                         </Grid>
