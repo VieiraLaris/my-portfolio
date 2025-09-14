@@ -4,6 +4,7 @@ import StyledProjectBox from "../../../../components/ProjectBox/ProjectBox";
 import StyledButtonReversed from "../../../../components/StyledButton/StyledButtonReversed";
 import deOlhoRSLogo from "../../../../../src/assets/images/logoDeOlhoRS.png";
 import entregaiLogo from "../../../../../src/assets/images/LogoEntregai.png";
+import bdLogo from "../../../../../src/assets/images/database-icon-nobg.png";
 
 const Projects = () => {
   const StyledProjects = styled("div")(({ theme }) => ({
@@ -47,8 +48,13 @@ const Projects = () => {
   };
 
   const handleEntregai = () => {
-    console.log("View project De Olho RS button clicked");
+    console.log("View project Entregai button clicked");
     window.location.href = "https://github.com/projeto-de-algoritmos-2024/Greed_Entregai";
+  };
+
+  const handleBD = () => {
+    console.log("View project Projeto de Banco de Dados button clicked");
+    window.location.href = "https://github.com/VieiraLaris/SBD1_ProjetoFinal";
   };
 
   return (
@@ -72,6 +78,12 @@ const Projects = () => {
             title: "EntregAí",
             description: "Project developed to demonstrate the practical application of the Interval Scheduling algorithm, which organizes deliveries prioritizing those with closer end times.",
             handleButton: handleEntregai
+          },
+          {
+            img: bdLogo,
+            title: "Database Project",
+            description: "Database project developed for a buffet company, including an Entity-Relationship diagram, a logical model and SQL queries.",
+            handleButton: handleBD
           }].map((project, index) => (
             <Grid key={index}>
               <Zoom in={checked} style={{ transitionDelay: `${index * 500}ms` }}>
@@ -84,7 +96,7 @@ const Projects = () => {
                       <Typography fontWeight="bold" variant="h6">
                         {project.title}
                       </Typography>
-                      <Typography>
+                      <Typography paddingBottom={2}>
                         {project.description}
                       </Typography>
                       <StyledButtonReversed onClick={project.handleButton}>
