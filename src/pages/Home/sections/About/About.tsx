@@ -55,7 +55,7 @@ const About = () => {
                         </Grid>
                     </Grid>
                     <Grid size={12} pt={5}>
-                        <Typography variant="h6" textAlign="center">✴ Hi, I'm Larissa! ✴</Typography>
+                        <Typography color="primary.main" variant="h6" textAlign="center">✴ Hi, I'm Larissa! ✴</Typography>
                         <Typography color="primary.main" variant="h6" textAlign="center">I'm a Software Engineering student at the University of Brasília (UnB), with a strong interest in data modeling and analysis. I also really enjoy working with front-end development, where I can combine creativity and technical skills to build engaging user experiences.</Typography>
                         <Typography color="primary.main" variant="h6" textAlign="center">I’m eager to take on new challenges that allow me to enhance my software development skills and contribute to impactful projects.</Typography>
                     </Grid>
