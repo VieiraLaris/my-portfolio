@@ -8,7 +8,7 @@ interface StyledCircularButtonProps {
 
 const StyledCircularButton: React.FC<StyledCircularButtonProps> = ({children, onClick}) => {
     const StyledCircularButton = styled("button")(({ theme }) => ({
-        backgroundColor: "transparent",
+        backgroundColor: theme.palette.primary.main,
         border: `1px solid ${theme.palette.secondary.light}`,
         borderRadius: "100%",
         padding: "20px",
