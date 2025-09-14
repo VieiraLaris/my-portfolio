@@ -2,7 +2,7 @@ import { Container, Grid, styled, Typography } from "@mui/material"
 
 const Footer = () => {
     const StyledFooter = styled("div")(({theme})=> ({
-        backgroundColor: "#F4C3BE",
+        backgroundColor: theme.palette.secondary.main,
         display: "flex",
         alignItems: "top",
         [theme.breakpoints.up('xs')]: {
@@ -22,7 +22,7 @@ const Footer = () => {
         <StyledFooter>
             <Container maxWidth="lg">
                 <Grid container display="flex" justifyContent="center">
-                    <Typography>@ 2025 Larissa Vieira - All rights reserved</Typography>
+                    <Typography color="primary.main">@ 2025 Larissa Vieira - All rights reserved</Typography>
                 </Grid>
             </Container>
         </StyledFooter>
