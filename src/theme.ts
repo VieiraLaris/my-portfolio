@@ -5,18 +5,20 @@ import './styles/fonts.css';
 let theme = createTheme({
   palette: {
     primary: {
-      main: '#1C1C1B',
+      main: '#231942',
     },
     secondary: {
-      main: '#e9877e',
+      main: '#E8E9ED',
     },
   },
 
   typography: {
-    fontFamily: "SpaceGrotesk"
+    fontFamily: "Poppins"
   }
 });
 
 theme = responsiveFontSizes(theme);
 
 export default theme;
+
+
