@@ -1,7 +1,7 @@
 import { Container, Grid, styled, Typography } from "@mui/material";
 import sqlIcon from '../../../../assets/images/servidor-sql.png';
 import mysqlIcon from '../../../../assets/images/mysql.png';
-import cIcon from '../../../../assets/images/letra-c.png';
+import cIcon from '../../../../assets/images/c-program-icon.png';
 import gitIcon from '../../../../assets/images/git.png';
 import reactIcon from '../../../../assets/images/biblioteca.png';
 import typescriptIcon from '../../../../assets/images/typescript.png';
@@ -29,7 +29,7 @@ const Skills = () => {
 
     const StyledIcon = styled("img")(({theme}) => ({   
         [theme.breakpoints.up('xs')]: {
-            width: "70px",
+            width: "80px",
         },
         [theme.breakpoints.up('md')]: {
             width: "100px",
