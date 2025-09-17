@@ -7,7 +7,7 @@ import StyledCircularButton from "../../../../components/StyledCircularButton/St
 import githubIcon from '../../../../assets/images/githubBranco.png';
 import linkedinIcon from '../../../../assets/images/linkedinBranco.png';
 import curriculo from '../../../../assets/documents/LarissaDeJesusVieira-CV.pdf';
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 import PatternBG from '../../../../assets/images/pattern_bg2.png';
 
 const Hero = () => {
@@ -67,10 +67,10 @@ const Hero = () => {
         window.location.href = "https://www.linkedin.com/in/larissa-de-jesus-vieira-0a897a21a/";
     };
 
-    const [typedName, setTypedName] = useState("");
-    const name = "arissa Vieira";
+    //const [typedName, setTypedName] = useState("");
+    //const name = "arissa Vieira";
 
-    useEffect(() => {
+    /*useEffect(() => {
         let currentText = "";
         let i = 0;
         const typingInterval = setInterval(() => {
@@ -84,7 +84,7 @@ const Hero = () => {
         }, 100);
 
         return () => clearInterval(typingInterval);
-    }, []);
+    }, []);*/
 
     return (
         <>
@@ -99,7 +99,7 @@ const Hero = () => {
                             </Box>
                         </Grid>
                         <Grid size={{ xs: 12, md: 7 }} >
-                            <Typography color="secondary.main" variant="h1" textAlign="center" fontWeight="bold" pb={2}>L{typedName}</Typography>
+                            <Typography color="secondary.main" variant="h1" textAlign="center" fontWeight="bold" pb={2}>Larissa Vieira</Typography>
                             <Typography color="secondary.main" variant="h3" textAlign="center">Software Engineer</Typography>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={5}>
                                 <Grid size={{ xs: 12, md: 4 }} display="flex" justifyContent="center">
