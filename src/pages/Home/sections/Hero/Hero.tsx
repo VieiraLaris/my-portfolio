@@ -9,6 +9,7 @@ import linkedinIcon from '../../../../assets/images/linkedinBranco.png';
 import curriculo from '../../../../assets/documents/LarissaDeJesusVieira-CV.pdf';
 //import { useEffect, useState } from "react";
 import PatternBG from '../../../../assets/images/pattern_bg2.png';
+import perfil from '../../../../assets/images/perfil_smaller.jpg';
 
 const Hero = () => {
     const StyledHero = styled("div")(({ theme }) => ({
@@ -94,7 +95,7 @@ const Hero = () => {
                         <Grid size={{ xs: 12, md: 5 }}>
                             <Box position="relative">
                                 <Box position="relative" textAlign="center">
-                                    <StyledImg src='https://avatars.githubusercontent.com/u/116472322?v=4' />
+                                    <StyledImg src={perfil} />
                                 </Box>
                             </Box>
                         </Grid>
