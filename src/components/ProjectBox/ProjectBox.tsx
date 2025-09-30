@@ -20,6 +20,7 @@ const StyledProjectBox: React.FC<StyledProjectBoxProps> = ({children}) => {
         paddingTop: "10%",
         [theme.breakpoints.up('xs')]: {
             width: "100%",
+            height: "550px"
         },
         [theme.breakpoints.up('md')]: {
             width: "500px",
