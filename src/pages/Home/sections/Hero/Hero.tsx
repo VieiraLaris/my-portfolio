@@ -2,7 +2,7 @@ import { Box, Container, Grid, styled, Typography } from "@mui/material";
 import DownloadOutlinedIcon from '@mui/icons-material/DownloadOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
-import theme from "../../../../theme";
+//import theme from "../../../../theme";
 import StyledCircularButton from "../../../../components/StyledCircularButton/StyledCircularButton";
 import githubIcon from '../../../../assets/images/githubBranco.png';
 import linkedinIcon from '../../../../assets/images/linkedinBranco.png';
