@@ -31,10 +31,10 @@ const About = () => {
                  borderBottom={`1px solid ${theme.palette.primary.main}`}
                  pb={5}>
                 <Grid container spacing={1}>
-                    <Grid size={12}>
+                    <Grid item xs={12}>
                         <Typography color="primary.main" variant="h1" textAlign="center" pb={5}>About me</Typography>
                     </Grid>
-                    <Grid container size={12} display="flex" justifyContent="center" spacing={3} >
+                    <Grid item xs={12} display="flex" justifyContent="center" spacing={3}>
                         {/*
                         <Grid display="flex" justifyContent="center">
                             <StyledInfoBox>
@@ -45,7 +45,7 @@ const About = () => {
                             </StyledInfoBox>
                         </Grid>
                         */}
-                        <Grid display="flex" justifyContent="center">
+                        <Grid item display="flex" justifyContent="center"> 
                             <StyledInfoBox>
                                 <SchoolOutlinedIcon/>
                                 <Typography fontWeight="bold" variant="h6">Education</Typography>
@@ -54,10 +54,9 @@ const About = () => {
                             </StyledInfoBox>
                         </Grid>
                     </Grid>
-                    <Grid size={12} pt={5}>
-                        <Typography color="primary.main" variant="h6" textAlign="center">✴ Hi, I'm Larissa! ✴</Typography>
-                        <Typography color="primary.main" variant="h6" textAlign="center">I'm a Software Engineering student at the University of Brasília (UnB), with a strong interest in data modeling and analysis. I also really enjoy working with front-end development, where I can combine creativity and technical skills to build engaging user experiences.</Typography>
-                        <Typography color="primary.main" variant="h6" textAlign="center">I’m eager to take on new challenges that allow me to enhance my software development skills and contribute to impactful projects.</Typography>
+                    <Grid item xs={12} pt={5} pb={4}>
+                        <Typography color="primary.main" variant="h6" textAlign="center" pt={6}>✴ Hi, I'm Larissa! ✴</Typography>
+                        <Typography color="primary.main" variant="h6" textAlign="center">I'm a Software Engineering student at the University of Brasília (UnB), with a strong interest in data modeling and analysis. I also really enjoy working with front-end development, where I can combine creativity and technical skills to build engaging user experiences. I’m eager to take on new challenges that allow me to enhance my software development skills and contribute to impactful projects.</Typography>
                     </Grid>
                 </Grid>
                 </Box>
