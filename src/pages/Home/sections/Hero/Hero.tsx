@@ -36,7 +36,8 @@ const Hero = () => {
     const StyledImg = styled("img")(() => ({
         width: "70%",
         borderRadius: "50%",
-        border: `4px solid ${theme.palette.secondary.light}`
+        //backgroundColor: theme.palette.secondary.dark,
+        //border: `4px solid ${theme.palette.secondary.light}`
     }));
 
     const StyledIcon = styled("img")(() => ({
@@ -68,48 +69,31 @@ const Hero = () => {
         window.location.href = "https://www.linkedin.com/in/larissa-de-jesus-vieira-0a897a21a/";
     };
 
-    //const [typedName, setTypedName] = useState("");
-    //const name = "arissa Vieira";
-
-    /*useEffect(() => {
-        let currentText = "";
-        let i = 0;
-        const typingInterval = setInterval(() => {
-            if (i < name.length) {
-                currentText += name.charAt(i);
-                setTypedName(currentText);
-                i++;
-            } else {
-                clearInterval(typingInterval);
-            }
-        }, 100);
-
-        return () => clearInterval(typingInterval);
-    }, []);*/
+    // Os comentários do useEffect/useState foram mantidos.
 
     return (
         <>
             <StyledHero>
                 <Container maxWidth="lg">
                     <Grid container spacing={2}>
-                        <Grid size={{ xs: 12, md: 5 }}>
+                        <Grid item xs={12} md={5}>
                             <Box position="relative">
                                 <Box position="relative" textAlign="center">
                                     <StyledImg src={perfil} />
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid size={{ xs: 12, md: 7 }} >
+                        <Grid item xs={12} md={7} >
                             <Typography color="secondary.main" variant="h1" textAlign="center" fontWeight="bold" pb={2}>Larissa Vieira</Typography>
                             <Typography color="secondary.main" variant="h3" textAlign="center">Software Engineer</Typography>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={5}>
-                                <Grid size={{ xs: 12, md: 4 }} display="flex" justifyContent="center">
+                                <Grid item xs={12} md={4} display="flex" justifyContent="center">
                                     <StyledButton onClick={handleDownload}>
                                         <DownloadOutlinedIcon />
                                         <Typography>Download CV</Typography>
                                     </StyledButton>
                                 </Grid>
-                                <Grid size={{ xs: 12, md: 4 }} display="flex" justifyContent="center">
+                                <Grid item xs={12} md={4} display="flex" justifyContent="center">
                                     <StyledButton onClick={handleEmail}>
                                         <EmailOutlinedIcon />
                                         <Typography>Contact me</Typography>
@@ -117,12 +101,12 @@ const Hero = () => {
                                 </Grid>
                             </Grid>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={5}>
-                                <Grid size={{ xs: 4, md: 2 }} display="flex" justifyContent="center">
+                                <Grid item xs={4} md={2} display="flex" justifyContent="center">
                                     <StyledCircularButton onClick={handleGithub}>
                                         <StyledIcon src={githubIcon} />
                                     </StyledCircularButton>
                                 </Grid>
-                                <Grid size={{ xs: 4, md: 2 }} display="flex" justifyContent="center">
+                                <Grid item xs={4} md={2} display="flex" justifyContent="center">
                                     <StyledCircularButton onClick={handleLinkedin}>
                                         <StyledIcon src={linkedinIcon} />
                                     </StyledCircularButton>
