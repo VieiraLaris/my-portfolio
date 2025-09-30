@@ -41,45 +41,43 @@ const Skills = () => {
             <StyledSkills>
                 <Container id="skills" maxWidth="lg">
                     <Grid container spacing={1}>
-                        <Grid size={12}>
+                        <Grid item xs={12}>
                             <Typography color="primary.main" variant="h1" textAlign="center" pb={10}>My skills</Typography>
                         </Grid>
-
-                        <Grid container size={12} display="flex" justifyContent="center" spacing={3}>
-                            
-                            <Grid size={{ xs: 12, md: 3 }} display="flex" justifyContent="center" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
+                        <Grid item xs={12} container display="flex" justifyContent="center" spacing={3}>
+                            <Grid item xs={12} md={3} display="flex" justifyContent="center" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
                                 <StyledIcon src={sqlIcon} />
                                 <Typography color="primary.dark" variant="h6">SQL</Typography>
                             </Grid>
-                            <Grid size={{ xs: 12, md: 3 }} display="flex" justifyContent="left" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
+                            <Grid item xs={12} md={3} display="flex" justifyContent="center" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
                                 <StyledIcon src={mysqlIcon} />
                                 <Typography color="primary.dark" variant="h6">MySQL</Typography>
                             </Grid>
-                            <Grid size={{ xs: 12, md: 3 }} display="flex" justifyContent="left" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
+                            <Grid item xs={12} md={3} display="flex" justifyContent="center" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
                                 <StyledIcon src={cIcon} />
                                 <Typography color="primary.dark" variant="h6">C</Typography>
                             </Grid>
-                            <Grid size={{ xs: 12, md: 3 }} display="flex" justifyContent="left" alignItems="center"  gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
+                            <Grid item xs={12} md={3} display="flex" justifyContent="center" alignItems="center"  gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
                                 <StyledIcon src={gitIcon} />
                                 <Typography color="primary.dark" variant="h6">Git</Typography>
                             </Grid>
-                            <Grid size={{ xs: 12, md: 3 }} display="flex" justifyContent="left" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
+                            <Grid item xs={12} md={3} display="flex" justifyContent="center" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
                                 <StyledIcon src={reactIcon} />
                                 <Typography color="primary.dark" variant="h6">React</Typography>
                             </Grid>
-                            <Grid size={{ xs: 12, md: 3 }} display="flex" justifyContent="left" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
+                            <Grid item xs={12} md={3} display="flex" justifyContent="center" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
                                 <StyledIcon src={typescriptIcon} />
                                 <Typography color="primary.dark" variant="h6">TypeScript</Typography>
                             </Grid>
-                            <Grid size={{ xs: 12, md: 3 }} display="flex" justifyContent="left" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
+                            <Grid item xs={12} md={3} display="flex" justifyContent="center" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
                                 <StyledIcon src={dataModelingIcon} />
                                 <Typography color="primary.dark" variant="h6">Data Modeling</Typography>
                             </Grid>
-                            <Grid size={{ xs: 12, md: 3 }} display="flex" justifyContent="left" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
+                            <Grid item xs={12} md={3} display="flex" justifyContent="center" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
                                 <StyledIcon src={LinuxIcon} />
                                 <Typography color="primary.dark" variant="h6">Linux</Typography>
                             </Grid>
-                            <Grid size={{ xs: 12, md: 3 }} display="flex" justifyContent="left" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
+                            <Grid item xs={12} md={3} display="flex" justifyContent="center" alignItems="center" gap={2} paddingBottom={7}  sx={{ flexDirection: 'column' }}>
                                 <StyledIcon src={figmaIcon} />
                                 <Typography color="primary.dark" variant="h6">Figma</Typography>
                             </Grid>
